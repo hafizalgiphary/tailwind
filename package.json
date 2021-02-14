@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "npm run watch:tailwind",
+    "watch:tailwind": "nodemon --watch src/style.css -x \"npm run build\"",
+    "build": "tailwindcss build src/style.css -o dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
